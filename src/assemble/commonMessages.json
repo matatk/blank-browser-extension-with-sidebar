@@ -1,0 +1,31 @@
+{
+  "extensionShortName": {
+    "message": "EXTENSION_NAME"
+  },
+
+  "extensionFullName": {
+    "message": "EXTENSION_LONG_NAME"
+  },
+
+  "extensionDescription": {
+    "message": "EXTENSION_DESCRIPTION"
+  },
+
+
+
+
+  "popupHeading": {
+    "message": "EXTENSION_NAME"
+  },
+
+
+
+
+  "prefsTitle": {
+    "message": "EXTENSION_NAME Options"
+  },
+
+  "prefsDebugInfo": {
+    "message": "Show debugging info in the console"
+  }
+}

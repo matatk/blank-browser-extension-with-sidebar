@@ -1,0 +1,50 @@
+{
+  "name": "EXTENSION_NAME",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "pre_build": "npm test",
+    "_build": "node scripts/build.js",
+    "build:all": "npm run clean:all && npm run _build -- all",
+    "build:all:quick": "node scripts/build.js all",
+    "build:chrome": "npm run clean:chrome && npm run _build -- chrome",
+    "build:chrome:test": "npm run clean:chrome && npm run _build -- chrome test",
+    "build:edge": "npm run clean:edge && npm run _build -- edge",
+    "build:firefox": "npm run clean:firefox && npm run _build -- firefox",
+    "build:opera": "npm run clean:opera && npm run _build -- opera",
+    "clean:all": "npm run clean:firefox && npm run clean:chrome && npm run clean:opera && npm run clean:edge",
+    "clean:cache": "rimraf build/png-cache",
+    "clean:chrome": "rimraf build/chrome build/chrome-test EXTENSION_NAME-*-chrome.zip",
+    "clean:edge": "rimraf build/edge build/edge-test EXTENSION_NAME-*-edge.zip",
+    "clean:firefox": "rimraf build/firefox build/firefox-test EXTENSION_NAME-*-firefox.zip",
+    "clean:opera": "rimraf build/opera build/opera-test EXTENSION_NAME-*-opera.zip",
+    "start:firefox": "web-ext run --browser-console --source-dir build/firefox/",
+    "pretest": "eslint .",
+    "test": "npm run test:backgroundGreener",
+    "pretest:backgroundGreener": "rollup src/code/backgroundGreener.js -f cjs > test/test-code-in-harness-backgroundGreener.js",
+    "test:backgroundGreener": "node test/test-backgroundGreener.js"
+  },
+  "devDependencies": {
+    "addons-linter": "~1.3",
+    "archiver": "~3.0",
+    "chalk": "~2.4",
+    "deepmerge": "~2.2",
+    "eslint": "~5.7",
+    "fs-extra": "~7.0",
+    "husky": "~1.1",
+    "jsdom": "~12.2",
+    "one-svg-to-many-sized-pngs": "github:matatk/one-svg-to-many-sized-pngs#0.2.0",
+    "puppeteer": "~1.9",
+    "replace-in-file": "~3.4",
+    "rimraf": "~2.6",
+    "rollup": "~0.66",
+    "rollup-plugin-esformatter": "~0.5",
+    "rollup-plugin-terser": "~1.0",
+    "test": "~0.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build:all"
+    }
+  }
+}

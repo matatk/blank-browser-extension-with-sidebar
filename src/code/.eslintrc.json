@@ -1,0 +1,14 @@
+{
+  "env": {
+    "browser": true,
+    "node": false
+  },
+  "globals": {
+    "BROWSER": false,
+    "INTERFACE": false,
+    "browser": false
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}

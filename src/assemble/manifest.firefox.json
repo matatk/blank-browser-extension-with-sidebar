@@ -1,0 +1,38 @@
+{
+  "icons": {
+    "96": "logo-96.png"
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "18": "logo-18.png",
+      "32": "logo-32.png",
+      "36": "logo-36.png",
+      "64": "logo-64.png"
+    }
+  },
+
+  "sidebar_action": {
+    "default_title": "__MSG_extensionShortName__",
+    "default_panel": "sidebarPanel.html",
+    "default_icon": {
+      "32": "logo-32.png",
+      "64": "logo-64.png"
+    },
+    "open_at_install": false
+  },
+
+  "options_ui": {
+    "browser_style": true
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "EXTENSION_ID",
+      "strict_min_version": "62.0"
+    }
+  },
+
+  "devtools_page": "devtools.html"
+}

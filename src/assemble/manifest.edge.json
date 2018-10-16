@@ -1,0 +1,17 @@
+{
+  "icons": {
+    "24": "logo-24.png",
+    "48": "logo-48.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "20": "logo-20.png",
+      "40": "logo-40.png"
+    }
+  },
+
+  "background": {
+    "persistent": true
+  }
+}

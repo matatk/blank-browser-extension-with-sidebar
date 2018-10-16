@@ -1,0 +1,43 @@
+{
+  "prefsInterface": {
+    "message": "Use:"
+  },
+
+  "prefsPopup": {
+    "message": "Toolbar pop-up and sidebar"
+  },
+
+  "prefsPopupExplanation": {
+    "message": "Activating the toolbar button or shortcut key will FIXME in a pop-up. If you have the sidebar open, FIXME shown there too."
+  },
+
+  "prefsSidebar": {
+    "message": "Sidebar only"
+  },
+
+  "prefsSidebarExplanation": {
+    "message": "FIXME in the sidebar, which can be opened via the toolbar button or shortcut key."
+  },
+
+  "prefsResetMessages": {
+    "message": "Reinstate dismissed messages"
+  },
+
+  "prefsResetMessagesDone": {
+    "message": "Help messages have been reinstated."
+  },
+
+
+
+  "hintSidebarIsNotPrimary": {
+    "message": "EXTENSION_NAME is set up to use a pop-up. The sidebar will still work, but using the shortcut key will make the pop-up appear, not the sidebar."
+  },
+
+  "hintSidebarIsNotPrimaryOptions": {
+    "message": "Change options"
+  },
+
+  "hintDismiss": {
+    "message": "Dismiss note"
+  }
+}
