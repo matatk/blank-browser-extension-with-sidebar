@@ -92,8 +92,9 @@ if (INTERFACE === 'sidebar') {
 // Management
 //
 
-// FIXME https://github.com/matatk/landmarks/issues/192
-document.addEventListener('DOMContentLoaded', function() {
+function main() {
 	document.getElementById('heading').innerText =
 		browser.i18n.getMessage('popupHeading')
-})
+}
+
+main()

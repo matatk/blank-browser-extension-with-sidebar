@@ -73,6 +73,10 @@ Some further info on the test/build process:
 Changes
 -------
 
+### 0.0.2
+
+* No need to check for DOMContentLoaded in options and GUI scripts, as they are included via `<script>` tags at the end of the `<body>`.
+
 ### 0.0.1
 
 * Initial release.
