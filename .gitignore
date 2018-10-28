@@ -3,8 +3,7 @@
 node_modules
 build
 _site
-chrome-out.png
-opera-out.png
+metadata/out-*.png
 EXTENSION_NAME-*.zip
 npm-debug.log
 test/test-code-in-harness-*.js

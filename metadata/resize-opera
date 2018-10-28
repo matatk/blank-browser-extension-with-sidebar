@@ -1,1 +1,0 @@
-convert -format png -trim +repage -background none -resize 612x408 -gravity center -extent 612x408 opera.png opera-out.png

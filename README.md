@@ -73,10 +73,14 @@ Some further info on the test/build process:
 Changes
 -------
 
-### 0.0.2
+### 0.0.3 (2018-10-28)
+
+* Use the updated resize script from Landmarks, which is a single script for both Chrome and Opera, and supports resizing multiple screengrabs.
+
+### 0.0.2 (2018-10-21)
 
 * No need to check for DOMContentLoaded in options and GUI scripts, as they are included via `<script>` tags at the end of the `<body>`.
 
-### 0.0.1
+### 0.0.1 (2018-10-16)
 
 * Initial release.
