@@ -1,6 +1,6 @@
 {
   "name": "EXTENSION_NAME",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "pre_build": "npm test",
