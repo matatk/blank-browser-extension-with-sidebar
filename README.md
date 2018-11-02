@@ -73,6 +73,10 @@ Some further info on the test/build process:
 Changes
 -------
 
+### 0.0.4 (2018-11-02)
+
+* Use updated image resize script for the screengrabs.
+
 ### 0.0.3 (2018-10-28)
 
 * Use the updated resize script from Landmarks, which is a single script for both Chrome and Opera, and supports resizing multiple screengrabs.
